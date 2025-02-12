@@ -10,8 +10,8 @@ require('dotenv').config();
 mongoose.connect(process.env.MONGODB_URI)
 .then(()=>{
     console.log('Connected to the database');
-    app.listen(3001,()=>{
-        console.log("Server is running @ http://localhost:3001");
+    app.listen(3000,()=>{
+        console.log("Server is running @ http://localhost:3000");
         
     });
 })
